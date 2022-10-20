@@ -13,4 +13,4 @@ while number != 1:
     number = number/x
     
 # Output
-print(f'The largest prime factor of {num_input} is {max(factors)}')
+print(max(factors))
