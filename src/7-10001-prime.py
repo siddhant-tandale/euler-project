@@ -17,6 +17,7 @@ while counter <= term:
 
     number += 2
 
+#Output
 number -= 2
 print(number)
 
