@@ -2,22 +2,15 @@ number = '''73167176531330624919225119674426574742355349194934969835203127745063
 
 num_list = list(number)
 num_list = [int(n) for n in num_list]
-answers = []
+max_product = 1
 
 for i in range(len(num_list)-12):
     
-    window = []
-    for n in range(13):
-        window.append(num_list[i])
-        i+=1
-
     product = 1
-    for e in window:
-        product *= e
+    for j in range(i, i+13):
+        product *= num_list[j]
 
-    if product != 0:
-        answers.append(product)
+    max_product = max(product, max_product)
 
-
-print(max(answers))
+print(max_product)
 
