@@ -3,7 +3,7 @@ num_input = 600851475143
 number = num_input
 factors = []
 
-# Loop to find Prime Factors
+# Prime Factor Loop
 while number != 1:
     x = 2
     while number%x != 0:
@@ -14,3 +14,4 @@ while number != 1:
     
 # Output
 print(max(factors))
+

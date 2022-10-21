@@ -3,10 +3,11 @@ term = 10001
 number = 1
 counter = 1
 
-# Loop to find Prime Numbers
+# Main Loop
 while counter <= term:
     prime = True
-            
+    
+    # Prime Number Loop
     for x in range(3, int((number**(1/2)) + 1)):
         if number % x == 0: 
             prime = False
@@ -21,8 +22,3 @@ while counter <= term:
 number -= 2
 print(number)
 
-
-    
-    
-
-    
